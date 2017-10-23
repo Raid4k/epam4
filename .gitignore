@@ -2,3 +2,7 @@ node_modules/ajv/lib/ajv.d.ts
 node_modules/.bin/mkdirp
 node_modules/.bin/gulp
 node_modules/
+.gitattributse
+.gitignore
+gulpfile.js
+package.json
