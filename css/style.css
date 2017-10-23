@@ -6,27 +6,89 @@ body {
   background: #dedfc7;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 0.857em;
   color: #ffffff;
 }
 
 h1 {
-  font-size: 14px;
+  font-size: 1em;
+  margin: 0;
+  text-transform: uppercase;
 }
 
-.wrapper {
-  margin: 100px;
-}
-
-.widgets-content {
+.widgets {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 100px;
 }
 
 .widget-item {
   height: 260px;
   width: 360px;
-  margin: 20px;
+  margin: 10px;
   background: #283593;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 black;
+  overflow: hidden;
+}
+
+.widget-item:focus {
+  opacity: .5;
+}
+
+.widget-item:hover {
+  opacity: .8;
+}
+
+.hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  clip: rect 1px, 1px, 1px, 1px;
+  opacity: 0;
+  overflow: hidden;
+}
+
+/*MADRID*/
+.madrid {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.madrid-header {
+  padding: 30px 20px;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.madrid-header .action_menu {
+  width: 24px;
+  height: 16px;
+  background: url(../img/3dots.png) no-repeat center;
+  cursor: pointer;
+}
+
+.madrid-main {
+  background: url(../img/sun.png) no-repeat 180px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 80%;
+}
+
+.madrid-main .temperature {
+  font-size: 4.714em;
+  font-weight: 300;
+  padding-left: 17px;
+  align-content: stretch;
+  line-height: 60px;
+}
+
+.madrid-main .madrid-control {
+  background: #fff;
+  height: 64px;
 }

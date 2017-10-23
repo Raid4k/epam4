@@ -8,12 +8,23 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,700,700i,900" rel="stylesheet">
 </head>
-
 <body>
-<main>
-    <section class="wrapper">
-        <div class="widgets-content">
-            <div class="widget-item">1231231231</div>
+    <main>
+        <section class="widgets" role="main" aria-label="Виджеты" >
+            <div class="widget-item madrid"  aria-labelledby="widgetTitle"  aria-describedby="widgetDesc" role="structure" tabindex="1" >
+               <span class="hidden" id="widgetDesc">Вы можете изменить время, используя ползунок внизу виджета.</span>
+                <div class="madrid-header">
+                    <h1 id="widgetTitle">Madrid</h1>
+                    <div class="action_menu" aria-label="Действия" role="button" tabindex="2"  >
+                    <span class="hidden">Действия</span></div>
+                </div>
+             <div class="madrid-main" role="content" aria-labelledby="widgetTitle widgetTemperature" tabindex="3" >
+                 <span class="temperature" aria-label="Температура" role="roletype" tabindex="4" id="widgetTemperature">24°</span>
+                 <div class="madrid-control">
+                    
+                 </div>
+             </div>
+            </div>
             <div class="widget-item"></div>
             <div class="widget-item"></div>
             <div class="widget-item"></div>
@@ -29,10 +40,7 @@
             <div class="widget-item"></div>
             <div class="widget-item"></div>
             <div class="widget-item"></div>
-        </div>
-    </section>
-</main>
-
-
+        </section>
+    </main>
 </body>
-</html>
+|</html>
